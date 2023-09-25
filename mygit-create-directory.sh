@@ -18,4 +18,3 @@ mkdir -p "$directory_name"
 
 echo "Committing directory..."
 git add "$directory_name"
-git commit -m "Added new directory: $directory_name"
