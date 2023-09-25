@@ -11,6 +11,10 @@ elif [[ $push_result == *"fatal: No configured push destination"* ]]; then
     echo "Either specify the URL from the command-line or configure a remote repository using: "
     echo "git remote add origin <remote_repo_url>"
     exit 1
+elif [[ $push_result == *"fatal: The current branch"*"has no upstream branch."* ]]; then
+    echo "Error: The current branch does not have an upstream branch. Please set one using:"
+    echo "git push --set-upstream origin <branch_name>"
+    exit 1
 else
     echo "Push failed."
     exit 1
