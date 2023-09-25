@@ -20,3 +20,4 @@ if ! git ls-files --error-unmatch "$directory_name" &> /dev/null; then
 fi
 
 git rm -r "$directory_name"
+echo "Directory removed successfully."

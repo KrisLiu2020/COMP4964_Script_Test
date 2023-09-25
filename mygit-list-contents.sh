@@ -16,6 +16,9 @@ fi
 if ! git ls-files --error-unmatch "$directory_name" &> /dev/null; then
     echo "Error: The directory '$directory_name' is not tracked by Git."
     echo "Therefore, the specified directory name did not match any files."
+    echo "Please first run: "
+    echo "./mygit-commit.sh"
+    echo "Please be aware that the git add command won't work if the directory is empty."
     exit 1
 fi
 
