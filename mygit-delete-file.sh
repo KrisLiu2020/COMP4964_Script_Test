@@ -20,4 +20,4 @@ if ! git ls-files --error-unmatch "$file_name" &> /dev/null; then
 fi
 
 git rm "$file_name"
-git commit -m "Removed file: $file_name"
+echo "File removed successfully."

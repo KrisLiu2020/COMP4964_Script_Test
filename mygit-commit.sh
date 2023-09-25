@@ -19,7 +19,7 @@ git add .
 git commit -m "$1"
 
 if [ $? -eq 0 ]; then
-    echo "Commit successful."
+    echo "Commit is successful."
 else
     echo "Commit failed."
     exit 1
