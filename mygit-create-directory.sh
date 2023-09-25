@@ -16,5 +16,8 @@ fi
 echo "Creating directory..."
 mkdir -p "$directory_name"
 
-echo "Committing directory..."
+echo "Adding directory..."
 git add "$directory_name"
+echo "Added directory."
+
+echo "Please be aware that the git add command won't work if the directory is empty."

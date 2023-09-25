@@ -55,7 +55,7 @@ echo "--------------------------------------------------------------------------
 echo
 echo "7. Delete a Directory"
 echo "Usage: "
-echo "./mygit-delete-file.sh <directory_name>"
+echo "./mygit-delete-directory.sh <directory_name>"
 echo
 echo "Arguments:"
 echo "<directory_name>  : the directory that you want to delete from the repository"
